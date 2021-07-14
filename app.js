@@ -44,7 +44,7 @@ if (inputEl.value.length > 0){
 // });
 
 inputEl.addEventListener('keydown', function(e){
-  // console.log(e);
+  alert("추가기능 엔터.");
   let newTodo = {
       id: todos.length,
       todo: inputEl.value,
