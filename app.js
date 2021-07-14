@@ -44,7 +44,6 @@ if (inputEl.value.length > 0){
 // });
 
 inputEl.addEventListener('keydown', function(e){
-  alert("추가기능 엔터.");
   let newTodo = {
       id: todos.length,
       todo: inputEl.value,
@@ -53,6 +52,7 @@ inputEl.addEventListener('keydown', function(e){
  if (inputEl.value.length > 0 && e.keyCode === 13){
   //    App(newTodo);
   //    todos.push(newTodo);
+     alert("추가기능 엔터.");
      addData(todos, newTodo);
      render(todos)
      inputEl.value = ""
